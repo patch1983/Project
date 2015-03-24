@@ -1,0 +1,51 @@
+=== Run information ===
+
+Scheme:weka.clusterers.SimpleKMeans -N 5 -A "weka.core.ManhattanDistance -R first-last" -I 500 -S 10
+Relation:     2004v2
+Instances:    469268
+Attributes:   6
+              Primary Type
+              Description
+              Location Description
+              Arrest
+              Domestic
+              Ward
+Test mode:evaluate on training data
+
+=== Model and evaluation on training set ===
+
+
+kMeans
+======
+
+Number of iterations: 7
+Sum of within cluster distances: 945064.8017376052
+Missing values globally replaced with mean/mode
+
+Cluster centroids:
+                                                                                                                Cluster#
+Attribute                                                                         Full Data                            0                            1                            2                            3                            4
+                                                                                   (469268)                     (111865)                     (130125)                      (58971)                      (73561)                      (94746)
+============================================================================================================================================================================================================================================
+Primary Type                                                                          THEFT                    NARCOTICS                        THEFT                      BATTERY                      BATTERY              CRIMINAL DAMAGE
+Description                                                                          SIMPLE POSS: CANNABIS 30GMS OR LESS               $300 AND UNDER      DOMESTIC BATTERY SIMPLE                       SIMPLE                   TO VEHICLE
+Location Description                                                                 STREET                       STREET                       STREET                    RESIDENCE                     SIDEWALK                       STREET
+Arrest                                                                                FALSE                         TRUE                        FALSE                        FALSE                        FALSE                        FALSE
+Domestic                                                                              FALSE                        FALSE                        FALSE                         TRUE                        FALSE                        FALSE
+Ward                                                                                     22                           21                           31                           18                           24                           13
+
+
+
+
+Time taken to build model (full training data) : 9.24 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      111865 ( 24%)
+1      130125 ( 28%)
+2       58971 ( 13%)
+3       73561 ( 16%)
+4       94746 ( 20%)
+

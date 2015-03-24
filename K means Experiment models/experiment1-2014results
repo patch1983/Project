@@ -1,0 +1,48 @@
+=== Run information ===
+
+Scheme:weka.clusterers.SimpleKMeans -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -S 10
+Relation:     2014v2
+Instances:    271757
+Attributes:   6
+              Primary Type
+              Description
+              Location Description
+              Arrest
+              Domestic
+              Ward
+Test mode:evaluate on training data
+
+=== Model and evaluation on training set ===
+
+
+kMeans
+======
+
+Number of iterations: 3
+Within cluster sum of squared errors: 695006.8531861493
+Missing values globally replaced with mean/mode
+
+Cluster centroids:
+                                                                                                      Cluster#
+Attribute                                                                    Full Data                       0                       1
+                                                                              (271757)                (123195)                (148562)
+======================================================================================================================================
+Primary Type                                                                     THEFT                 BATTERY                   THEFT
+Description                                                             $500 AND UNDER DOMESTIC BATTERY SIMPLE          $500 AND UNDER
+Location Description                                                            STREET               RESIDENCE                  STREET
+Arrest                                                                           FALSE                   FALSE                   FALSE
+Domestic                                                                         FALSE                   FALSE                   FALSE
+Ward                                                                           22.7667                  26.776                 19.4421
+
+
+
+
+Time taken to build model (full training data) : 1.9 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      123195 ( 45%)
+1      148562 ( 55%)
+

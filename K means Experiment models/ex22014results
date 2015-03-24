@@ -1,0 +1,51 @@
+=== Run information ===
+
+Scheme:weka.clusterers.SimpleKMeans -N 5 -A "weka.core.ManhattanDistance -R first-last" -I 500 -S 10
+Relation:     2014v2
+Instances:    271757
+Attributes:   6
+              Primary Type
+              Description
+              Location Description
+              Arrest
+              Domestic
+              Ward
+Test mode:evaluate on training data
+
+=== Model and evaluation on training set ===
+
+
+kMeans
+======
+
+Number of iterations: 4
+Sum of within cluster distances: 561818.897959152
+Missing values globally replaced with mean/mode
+
+Cluster centroids:
+                                                                                                                Cluster#
+Attribute                                                                         Full Data                            0                            1                            2                            3                            4
+                                                                                   (271757)                      (44283)                      (82883)                      (43946)                      (38929)                      (61716)
+============================================================================================================================================================================================================================================
+Primary Type                                                                          THEFT                     BURGLARY                        THEFT              CRIMINAL DAMAGE                      BATTERY                    NARCOTICS
+Description                                                                  $500 AND UNDER               FORCIBLE ENTRY               $500 AND UNDER                   TO VEHICLE      DOMESTIC BATTERY SIMPLE POSS: CANNABIS 30GMS OR LESS
+Location Description                                                                 STREET                    RESIDENCE                       STREET                       STREET                    APARTMENT                       STREET
+Arrest                                                                                FALSE                        FALSE                        FALSE                        FALSE                        FALSE                         TRUE
+Domestic                                                                              FALSE                        FALSE                        FALSE                        FALSE                         TRUE                        FALSE
+Ward                                                                                     23                           24                           16                           34                           20                           24
+
+
+
+
+Time taken to build model (full training data) : 2.52 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       44283 ( 16%)
+1       82883 ( 30%)
+2       43946 ( 16%)
+3       38929 ( 14%)
+4       61716 ( 23%)
+
